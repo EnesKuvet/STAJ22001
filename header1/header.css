@@ -1,0 +1,65 @@
+/* stil.css */
+
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifi;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.ust-kisim {
+    background-color: #192124;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+.logo-alani {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    border-radius: 1rem;
+}
+
+.baslik {
+    font-size: 24px;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Navigasyon */
+.navigasyon ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navigasyon ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navigasyon ul li a:hover {
+   color: #007FFF;
+   transition: calc(0.4s) ease;
+}
+
+/* Footer */
+.alt-kisim {
+    background-color: #192124;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}

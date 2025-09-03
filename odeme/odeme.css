@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.ust-kisim, .alt-kisim {
+    flex-shrink: 0;
+}
+
+.odeme-kapsayici {
+    flex: 1 0 auto;
+    max-width: 600px;
+    margin: 3rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.odeme-kapsayici h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #192124;
+    font-size: 1.8rem;
+}
+
+.odeme-kapsayici label {
+    display: block;
+    margin-top: 3rem;
+    font-weight: bold;
+    color: #192124;
+}
+
+.odeme-kapsayici textarea,
+.odeme-kapsayici select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 2rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.odeme-kapsayici button {
+    margin-top: 7rem;
+    width: 100%;
+    padding: 14px;
+    background-color: #192124;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.odeme-kapsayici button:hover {
+    background-color: #077FFF;
+}
+
+.mesaj {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: silver;
+}
+
+.kayit-kutusu {
+    width: 40vh;
+    margin: 2rem auto;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.kayit-kutusu h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.kayit-kutusu input,
+.kayit-kutusu select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.kayit-kutusu button {
+    width: 50%;
+    background-color: #192124;
+    color: white;
+    padding: 1rem;
+    margin: 2rem auto 0;
+    border: none;
+    border-radius: 4rem;
+    cursor: pointer;
+    display: block;
+}
+
+.kayit-kutusu button:hover {
+    background-color: #077FFF;
+    transition: 0.4s ease;
+}
+
+.kayit-kutusu .uyari {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+.mesaj {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.uyari {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    text-align: left;
+    display: none; 
+}
+

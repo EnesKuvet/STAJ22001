@@ -1,0 +1,192 @@
+/* GENEL BODY VE KAPSAYICI */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.ust-kisim, .alt-kisim {
+    flex-shrink: 0;
+}
+
+.siparis-kapsayici {
+    flex: 1 0 auto;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* GRID DÜZENİ -> 3 KART */
+.siparis-listesi {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* KART STİLLERİ */
+.siparis-karti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* İPTAL / STOK YETERSİZ DURUMU */
+.siparis-karti.iptal {
+    border-color: #cc0000;
+    background-color: #ffe5e5;
+}
+
+/* TAMAMLANDI DURUMU */
+.siparis-karti.tamamlandi {
+    border-color: #008000;
+    background-color: #e5ffe5;
+}
+
+/* ÜRÜN RESMİ */
+.siparis-karti img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* SIPARIS DETAYLARI */
+.siparis-detay {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem; /* satırlar arası boşluk */
+   
+}
+
+.siparis-detay h2 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #222;
+}
+
+.siparis-detay p {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.2;
+}
+
+.siparis-detay p strong {
+    color: #111;
+    display: inline-block;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.siparis-detay span.kucuk-metin {
+    font-weight: normal;
+    color: #555;
+}
+
+/* DURUM RENKLERİ */
+.durum strong {
+    font-weight: bold;
+}
+
+.durum strong.yesil {
+    color: green;
+}
+
+.durum strong.kirmizi {
+    color: red;
+}
+
+/* BUTON STİLLERİ */
+.siparis-detay button {
+    margin-top: 12px;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.siparis-detay button:hover {
+    background-color: #e74c3c;
+    transform: scale(1.05);
+}
+
+/* TOPLU SİPARİŞ İPTAL BUTONU */
+.toplu-iptal-alani {
+    text-align: center;
+    margin-top: 30px;
+    grid-column: 1 / -1; /* tüm satırı kapla */
+}
+
+.toplu-iptal-alani button {
+    padding: 15px 30px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toplu-iptal-alani button:hover {
+    background-color: #e74c3c;
+    transform: scale(1.05);
+}
+
+/* YUKARI ÇIK BUTONU */
+#btnYukariCik {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 40px;
+    z-index: 100;
+    font-size: 24px;
+    border: none;
+    background-color: #192124;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    transition: opacity 0.5s ease, background-color 0.3s ease;
+}
+
+#btnYukariCik:hover {
+    background-color: #077FFF;
+}
+
+/* RESPONSIVE GRID */
+@media (max-width: 768px) {
+    .siparis-listesi {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .siparis-listesi {
+        grid-template-columns: 1fr;
+    }
+}
