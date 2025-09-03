@@ -1,4 +1,4 @@
-// Şifre alanı aktifken kontroller başlasın
+
 document.getElementById("sifre").addEventListener("input", function () {
     const sifre = this.value;
 
@@ -6,23 +6,23 @@ document.getElementById("sifre").addEventListener("input", function () {
     const buyukHarf = /[A-Z]/.test(sifre);
     const rakam = /\d/.test(sifre);
 
-    // Her bir kuralın divini al
+    
     const sifreUyari = document.getElementById("sifreUyari");
     const harfUyari = document.getElementById("harfUyari");
     const rakamUyari = document.getElementById("rakamUyari");
 
-    // Her birini kontrol et ve renklendir
+   
     sifreUyari.style.color = uzunluk ? "green" : "red";
     harfUyari.style.color = buyukHarf ? "green" : "red";
     rakamUyari.style.color = rakam ? "green" : "red";
 
-    // Görünür yap (inputa basınca)
+    
     sifreUyari.style.display = "block";
     harfUyari.style.display = "block";
     rakamUyari.style.display = "block";
 });
 
-// Şifre tekrar kontrolü
+
 document.getElementById("sifretekrar").addEventListener("input", function () {
     const sifre = document.getElementById("sifre").value;
     const tekrar = this.value;
@@ -36,7 +36,7 @@ document.getElementById("sifretekrar").addEventListener("input", function () {
     }
 });
 
-// Form gönderilmeden önce kuralları doğrula
+
 function dogrula() {
     const sifre = document.getElementById("sifre").value;
     const tekrar = document.getElementById("sifretekrar").value;

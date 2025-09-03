@@ -1,7 +1,7 @@
 <?php
-session_start();         // Oturumu başlat
-session_unset();         // Tüm oturum değişkenlerini temizle
-session_destroy();       // Oturumu tamamen yok et
+session_start();         
+session_unset();         
+session_destroy();       
 
-header("Location: ../baslangicsayfasi/baslangicsayfasi.php"); // Başlangıç sayfasına yönlendir
+header("Location: ../baslangicsayfasi/baslangicsayfasi.php"); 
 exit;

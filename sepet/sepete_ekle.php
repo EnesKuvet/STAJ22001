@@ -10,7 +10,7 @@ if (!isset($_SESSION['kullanici_id'])) {
 $kullanici_id = $_SESSION['kullanici_id'];
 $urun_id = intval($_GET['id']);
 
-// Sepette varsa miktarı artır
+
 $kontrol = $baglanti->query("SELECT * FROM sepet WHERE kullanici_id = $kullanici_id AND urun_id = $urun_id");
 if ($kontrol->num_rows > 0) {
     $baglanti->query("UPDATE sepet SET adet = adet + 1 WHERE kullanici_id = $kullanici_id AND urun_id = $urun_id");

@@ -8,7 +8,7 @@ if (!isset($_SESSION['kullanici_id'])) {
 include '../veritabani/baglanti.php';
 $kullanici_id = $_SESSION['kullanici_id'];
 
-// Siparişleri çek
+
 $sorgu = "SELECT s.*, u.resim_yolu, u.isim as urun_adi, u.fiyat, k.isim, k.soyad 
           FROM siparisler s 
           JOIN urunler u ON s.urun_id = u.id 
@@ -26,15 +26,15 @@ while ($s = $sonuc->fetch_assoc()) {
         $aktif_siparis_var = true;
     }
 
-    // Duruma göre class seçimi
+    
     $kart_class = '';
     if (in_array($s['durum'], ['iptal', 'stok yetersiz'])) {
-        $kart_class = 'iptal'; // kırmızı
+        $kart_class = 'iptal'; 
     } elseif ($s['durum'] === 'tamamlandı') {
-        $kart_class = 'tamamlandi'; // yeşil
+        $kart_class = 'tamamlandi'; 
     }
 
-    // Durum yazısı rengi
+    
     $durum_class = '';
     if ($s['durum'] === 'hazırlanıyor') {
         $durum_class = 'yesil';

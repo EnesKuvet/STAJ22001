@@ -88,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <script>
         setTimeout(function () {
             window.location.href = "../giris/giris.php";
-        }, 2900); // 2 saniye sonra yönlendir
+        }, 2900); 
     </script>
 <?php endif; ?>
 

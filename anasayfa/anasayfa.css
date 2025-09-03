@@ -1,4 +1,4 @@
-/* Genel */
+
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Kategori Paneli */
+
 .kategori-panel {
     margin-top: 1.2rem;
     margin-left: 1rem;
@@ -47,17 +47,17 @@ body {
     color: white;
 }
 
-/* Ürünler Alanı */
+
 .urunler-alani {
     margin-left: 220px;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Sadece 3 ürün yan yana */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
 }
 
 
-/* Ürün Kartı */
+
 .urun-karti {
     background-color: white;
     padding: 15px;
@@ -100,7 +100,7 @@ body {
     overflow: hidden;
 }
 
-/* Buton */
+
 .urun-karti button {
     margin-top: 10px;
     padding: 10px 20px;
@@ -117,7 +117,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* Sepete eklendi bildirimi */
+
 .bildirim {
     display: none;
     position: fixed;
@@ -132,14 +132,14 @@ body {
     font-size: 1.2rem;
 }
 #btnYukariCik {
-  display: none; /* Sayfa yukarıdayken görünmesin */
-  position: fixed; /* Sayfaya sabitlensin */
-  bottom: 15px; /* Alt boşluk */
-  right: 40px; /* Sağ boşluk */
-  z-index: 100; /* Üstte olsun */
+  display: none; 
+  position: fixed; 
+  bottom: 15px; 
+  right: 40px; 
+  z-index: 100; 
   font-size: 24px;
   border: none;
-  background-color: #192124 ; /* Mavi buton */
+  background-color: #192124 ; 
   color: white;
   cursor: pointer;
   padding: 10px 15px;

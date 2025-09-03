@@ -1,11 +1,11 @@
-/* Genel */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: silver;
 }
 
-/* Kampanya Alanı */
+
 .kampanya-alani {
     background-image: url('../images/baslangic.png');
     background-size: cover;
@@ -37,7 +37,7 @@ body {
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
-/* Animasyon */
+
 .animasyonlu-metin {
     opacity: 0;
     transform: translateY(20px);
@@ -48,7 +48,7 @@ body {
     transform: translateY(0);
 }
 
-/* Ürünler */
+
 .urunler-alani {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -85,7 +85,7 @@ body {
     font-size: 1rem;
 }
 
-/* Satın Al Butonu */
+
 .satin-al-buton {
     background-color: #192124;
     color: white;
@@ -101,7 +101,7 @@ body {
     transition: 0.4s ease;
 }
 
-/* Footer */
+
 .alt-kisim {
     background-color: #192124;
     color: white;
@@ -110,9 +110,6 @@ body {
     margin-top: 30px;
 }
 
-/* Responsive Tasarım */
-
-/* Tablet */
 @media (max-width: 992px) {
     .urunler-alani {
         grid-template-columns: repeat(2, 1fr);
@@ -126,7 +123,7 @@ body {
     }
 }
 
-/* Mobil */
+
 @media (max-width: 600px) {
     .urunler-alani {
         grid-template-columns: 1fr;

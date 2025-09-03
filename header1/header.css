@@ -1,4 +1,4 @@
-/* stil.css */
+
 
 body {
     margin: 0;
@@ -6,7 +6,7 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header */
+
 .ust-kisim {
     background-color: #192124;
     color: white;
@@ -35,7 +35,7 @@ body {
     font-style: italic;
 }
 
-/* Navigasyon */
+
 .navigasyon ul {
     list-style-type: none;
     display: flex;
@@ -55,7 +55,7 @@ body {
    transition: calc(0.4s) ease;
 }
 
-/* Footer */
+
 .alt-kisim {
     background-color: #192124;
     color: white;

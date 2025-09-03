@@ -1,4 +1,4 @@
-/* GENEL BODY VE KAPSAYICI */
+
 html, body {
     height: 100%;
     margin: 0;
@@ -24,14 +24,14 @@ body {
     padding: 1rem;
 }
 
-/* GRID DÜZENİ -> 3 KART */
+
 .siparis-listesi {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-/* KART STİLLERİ */
+
 .siparis-karti {
     display: flex;
     flex-direction: column;
@@ -43,19 +43,19 @@ body {
     transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
-/* İPTAL / STOK YETERSİZ DURUMU */
+
 .siparis-karti.iptal {
     border-color: #cc0000;
     background-color: #ffe5e5;
 }
 
-/* TAMAMLANDI DURUMU */
+
 .siparis-karti.tamamlandi {
     border-color: #008000;
     background-color: #e5ffe5;
 }
 
-/* ÜRÜN RESMİ */
+
 .siparis-karti img {
     width: 150px;
     height: 150px;
@@ -63,11 +63,11 @@ body {
     margin-bottom: 15px;
 }
 
-/* SIPARIS DETAYLARI */
+
 .siparis-detay {
     display: flex;
     flex-direction: column;
-    gap: 0.2rem; /* satırlar arası boşluk */
+    gap: 0.2rem; 
    
 }
 
@@ -100,7 +100,7 @@ body {
     color: #555;
 }
 
-/* DURUM RENKLERİ */
+
 .durum strong {
     font-weight: bold;
 }
@@ -113,7 +113,7 @@ body {
     color: red;
 }
 
-/* BUTON STİLLERİ */
+
 .siparis-detay button {
     margin-top: 12px;
     padding: 10px 20px;
@@ -132,11 +132,11 @@ body {
     transform: scale(1.05);
 }
 
-/* TOPLU SİPARİŞ İPTAL BUTONU */
+
 .toplu-iptal-alani {
     text-align: center;
     margin-top: 30px;
-    grid-column: 1 / -1; /* tüm satırı kapla */
+    grid-column: 1 / -1; 
 }
 
 .toplu-iptal-alani button {
@@ -156,7 +156,7 @@ body {
     transform: scale(1.05);
 }
 
-/* YUKARI ÇIK BUTONU */
+
 #btnYukariCik {
     display: none;
     position: fixed;
@@ -178,7 +178,7 @@ body {
     background-color: #077FFF;
 }
 
-/* RESPONSIVE GRID */
+
 @media (max-width: 768px) {
     .siparis-listesi {
         grid-template-columns: repeat(2, 1fr);
